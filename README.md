@@ -53,4 +53,17 @@ python main.py
 ```
 
 Click anywhere in the window to randomize phases and restart the synchronization process.
-```
+
+## Citation
+
+If you use this code in your research or project, please cite it as:
+
+```bibtex
+@software{firefly_sync_sim,
+  author = {lrdcxdes},
+  title = {Pulse-Coupled Oscillators: Firefly Synchronization Simulation},
+  year = {2025},
+  publisher = {GitHub},
+  journal = {GitHub repository},
+  url = {https://github.com/lrdcxdes/PCO}
+}
